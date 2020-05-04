@@ -1,0 +1,418 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{BC9BDCEB-C1AB-4A13-ACB6-275A53C8BA81}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>City_bus_mgmt_system</RootNamespace>
+    <AssemblyName>City bus mgmt system</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <SignManifests>true</SignManifests>
+    <SignAssembly>false</SignAssembly>
+    <ManifestCertificateThumbprint>919F1A6D58DCF04A006860444D2825DEF67DEC65</ManifestCertificateThumbprint>
+    <ManifestKeyFile>City bus mgmt system_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <TargetZone>LocalIntranet</TargetZone>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.ReportViewer.Common, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceProcess" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="account.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="account.Designer.cs">
+      <DependentUpon>account.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bus det%28add%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus det%28add%29.Designer.cs">
+      <DependentUpon>bus det%28add%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bus det%28del%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus det%28del%29.Designer.cs">
+      <DependentUpon>bus det%28del%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bus det%28edit%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus det%28edit%29.Designer.cs">
+      <DependentUpon>bus det%28edit%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bus stop%28add%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus stop%28add%29.Designer.cs">
+      <DependentUpon>bus stop%28add%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bus stop%28del%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus stop%28del%29.Designer.cs">
+      <DependentUpon>bus stop%28del%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bus stop%28edit%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bus stop%28edit%29.Designer.cs">
+      <DependentUpon>bus stop%28edit%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="city_bus_mgmtDataSet.cs">
+      <DependentUpon>city_bus_mgmtDataSet.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="city_bus_mgmtDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>city_bus_mgmtDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="city_bus_mgmtDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>city_bus_mgmtDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="employee%28add%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee%28add%29.Designer.cs">
+      <DependentUpon>employee%28add%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee%28del%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee%28del%29.Designer.cs">
+      <DependentUpon>employee%28del%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="employee%28edit%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="employee%28edit%29.Designer.cs">
+      <DependentUpon>employee%28edit%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print.Designer.cs">
+      <DependentUpon>print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="report.Designer.cs">
+      <DependentUpon>report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="route mgmt%28add%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="route mgmt%28add%29.Designer.cs">
+      <DependentUpon>route mgmt%28add%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="ACCOUNT.rdlc" />
+    <EmbeddedResource Include="account.resx">
+      <DependentUpon>account.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus det%28add%29.resx">
+      <DependentUpon>bus det%28add%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus det%28del%29.resx">
+      <DependentUpon>bus det%28del%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus det%28edit%29.resx">
+      <DependentUpon>bus det%28edit%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus stop%28add%29.resx">
+      <DependentUpon>bus stop%28add%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus stop%28del%29.resx">
+      <DependentUpon>bus stop%28del%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bus stop%28edit%29.resx">
+      <DependentUpon>bus stop%28edit%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee%28add%29.resx">
+      <DependentUpon>employee%28add%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee%28del%29.resx">
+      <DependentUpon>employee%28del%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="employee%28edit%29.resx">
+      <DependentUpon>employee%28edit%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee.rdlc" />
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print.resx">
+      <DependentUpon>print.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="report.resx">
+      <DependentUpon>report.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ROUTE MANAGEMENT.rdlc" />
+    <EmbeddedResource Include="route mgmt%28add%29.resx">
+      <DependentUpon>route mgmt%28add%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="route mgmt%28del%29.resx">
+      <DependentUpon>route mgmt%28del%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="route%28report%29.resx">
+      <DependentUpon>route%28report%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="rute mgmt%28edit%29.resx">
+      <DependentUpon>rute mgmt%28edit%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketing.resx">
+      <DependentUpon>ticketing.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trip info%28del%29.resx">
+      <DependentUpon>trip info%28del%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trip info%28edit%29.resx">
+      <DependentUpon>trip info%28edit%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="trop info%28add%29.resx">
+      <DependentUpon>trop info%28add%29.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userlogin.resx">
+      <DependentUpon>userlogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="City bus mgmt system_TemporaryKey.pfx" />
+    <None Include="city_bus_mgmtDataSet.xsc">
+      <DependentUpon>city_bus_mgmtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="city_bus_mgmtDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>city_bus_mgmtDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="city_bus_mgmtDataSet.xss">
+      <DependentUpon>city_bus_mgmtDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="city_bus_mgmtDataSet1.xsc">
+      <DependentUpon>city_bus_mgmtDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="city_bus_mgmtDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>city_bus_mgmtDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="city_bus_mgmtDataSet1.xss">
+      <DependentUpon>city_bus_mgmtDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="route mgmt%28del%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="route mgmt%28del%29.Designer.cs">
+      <DependentUpon>route mgmt%28del%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="route%28report%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="route%28report%29.Designer.cs">
+      <DependentUpon>route%28report%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="rute mgmt%28edit%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rute mgmt%28edit%29.Designer.cs">
+      <DependentUpon>rute mgmt%28edit%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticketing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticketing.Designer.cs">
+      <DependentUpon>ticketing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trip info%28del%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trip info%28del%29.Designer.cs">
+      <DependentUpon>trip info%28del%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trip info%28edit%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trip info%28edit%29.Designer.cs">
+      <DependentUpon>trip info%28edit%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="trop info%28add%29.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trop info%28add%29.Designer.cs">
+      <DependentUpon>trop info%28add%29.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userlogin.Designer.cs">
+      <DependentUpon>userlogin.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmtc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bmtc1.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

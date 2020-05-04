@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly manifestVersion="1.0" xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity version="1.0.0.0" name="City bus mgmt system.exe" publicKeyToken="49158bebfe6b5ff3" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="City bus mgmt system" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="City bus mgmt system.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet class="System.Security.PermissionSet" version="1" Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!-- UAC Manifest Options
+            If you want to change the Windows User Account Control level replace the 
+            requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+            If you want to utilize File and Registry Virtualization for backward 
+            compatibility then delete the requestedExecutionLevel node.
+        -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="ADODB" version="7.0.3300.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="9.0.0.0" publicKeyToken="B03F5F7F11D50A3A" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="City bus mgmt system.exe" size="329216">
+      <assemblyIdentity name="City bus mgmt system" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>/EplxffI666axn26NebiXqo2kfo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="City bus mgmt system.exe.config" size="438">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>TVhCCk2m52ETzpAtRyovvCSTCK4=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=CLIENT-07\Administrator" issuerKeyHash="9b1097194ec792f3299f95babbbaadddb5e298c9" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>nf/HOfeJ5J58KD54e9Th/nhh4LQ=</DigestValue></Reference></SignedInfo><SignatureValue>KA3GiZdxPDyJV48Y2C1FABVO8AVH4ZoZ+/9kJc39w9wydKUbZK7GvnH73nA6V2fjrIxN7ihbQEJfVzAet/t+f56nXNlBXenFSzToNIYCxrhLmB5itDRleCMdEL0g+zCkh9bNgXHNXDub4/sdvPWJVlDC7gfVGYk5020MHuN9ZQQ=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>0LZAevE7nKP/RlOqEqyk3ce1E4e2aCFBVDZEypfOyWMiHkCqrrBTCXGw9Hhr2w34MCoGoIjVkR8BbND3a3nwnd5S1VyFhO+K6Eu6hze+6ICeQM0S8sLEu131Z3y/BjCIukP2wxIULlZc/ey3aC660XxezMMfExTCpl4kA2mfla8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="b4e06178fee1d47b783e287c9ee489f739c7ff9d" Description="" Url=""><as:assemblyIdentity version="1.0.0.0" name="City bus mgmt system.exe" publicKeyToken="49158bebfe6b5ff3" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=CLIENT-07\Administrator</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>72sinMG1H5fBC8ge3xeaIOnw1/A=</DigestValue></Reference></SignedInfo><SignatureValue>iu5FMIKDS2FW9nSUKA+VHgVNP+ZCbKpSoPydZdSYg+dhGtnXaRbxFeUXvcXJu3WGC+iHJh4GKopgI84Dv0ZyFagf4JAqWK7z7mV/dDQFRz5eeHqCTn4tbxQYtSLNKQRYZa2SlR9EjMbGCyORh3+CeSAh+M/B1MfgTJGNHR5tYdQ=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>0LZAevE7nKP/RlOqEqyk3ce1E4e2aCFBVDZEypfOyWMiHkCqrrBTCXGw9Hhr2w34MCoGoIjVkR8BbND3a3nwnd5S1VyFhO+K6Eu6hze+6ICeQM0S8sLEu131Z3y/BjCIukP2wxIULlZc/ey3aC660XxezMMfExTCpl4kA2mfla8=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB7TCCAVqgAwIBAgIQM54NlAvKlqpJA7ijgIqTsjAJBgUrDgMCHQUAMDkxNzA1BgNVBAMeLgBDAEwASQBFAE4AVAAtADAANwBcAEEAZABtAGkAbgBpAHMAdAByAGEAdABvAHIwHhcNMTMwMTA1MTIxMTMyWhcNMTQwMTA1MTgxMTMyWjA5MTcwNQYDVQQDHi4AQwBMAEkARQBOAFQALQAwADcAXABBAGQAbQBpAG4AaQBzAHQAcgBhAHQAbwByMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDQtkB68Tuco/9GU6oSrKTdx7UTh7ZoIUFUNkTKl87JYyIeQKqusFMJcbD0eGvbDfgwKgagiNWRHwFs0PdrefCd3lLVXIWE74roS7qHN77ogJ5AzRLywsS7XfVnfL8GMIi6Q/bDEhQuVlz97LdoLrrRfF7Mwx8TFMKmXiQDaZ+VrwIDAQABMAkGBSsOAwIdBQADgYEAs8hzg+Ov5ZnQNnhH9LoP94oVDeXUfA/RV//Lkh/RwFoFSWrKPbLVmiAdfSlPSJBw3QOVFTKcz9uQWZS9hIUsjX6+blcCBPN4peeQJyBOhE7QH+TXHQnqnXNCP/Q7/u1gDvmceodQRMNnd5JFnHSMelhV5eHW6inrZCgcTTsk4Uc=</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
