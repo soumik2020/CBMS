@@ -9,10 +9,15 @@ using System.Windows.Forms;
 
 namespace City_bus_mgmt_system
 {
+    public class test{
+        private int i;
+    }
     public partial class Main : Form
     {
         public Main()
         {
+            test t = new test();
+            t.i=10;
             InitializeComponent();
         }
 
